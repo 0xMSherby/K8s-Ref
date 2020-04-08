@@ -13,6 +13,9 @@ $ kubectl delete replicaset [replicaset-name]
 # list all objects in the cluster
 $ kubectl get all
 
+# Describe deployments
+$ kubectl describe deployments
+
 
 
 
