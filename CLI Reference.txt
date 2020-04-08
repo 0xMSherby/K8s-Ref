@@ -1,0 +1,11 @@
+# Create replicaset
+$ kubectl create -f rep-def.yml
+
+# Replace old replicaset with new one
+$ kubectl replace -f rep-def.yml
+
+# Scale replicaset to 3 based definition file must be running
+$ kubectl scale --replicas=3 -f rep-def.yml
+
+
+
