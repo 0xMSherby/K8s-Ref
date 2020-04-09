@@ -1,0 +1,8 @@
+# Create New Deployment from definition file
+$ kubectl create -f dep-def.yml
+
+# Get the status of the Rollout
+$ kubectl rollout status deployment/myapp-deplyment
+
+# Get the history of the rollout related to deployment
+$ kubectl rollout status deplyment/myapp-deployment
