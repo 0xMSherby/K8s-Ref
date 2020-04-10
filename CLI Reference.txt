@@ -1,20 +1,8 @@
-# Create replicaset
-$ kubectl create -f rep-def.yml
-
-# Replace old replicaset with new one
-$ kubectl replace -f rep-def.yml
-
-# Scale up or down replicaset to 3 based definition file must be running this not modify the file
-$ kubectl scale --replicas=3 -f rep-def.yml
-
-# Delete replicaset
-$ kubectl delete replicaset [replicaset-name]
-
 # list all objects in the cluster
 $ kubectl get all
 
-# Describe deployments
-$ kubectl describe deployments
+# Generate yaml file from running resource
+$ kubectl get rs/replica-set1 -o yaml
 
 
 
