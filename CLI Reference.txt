@@ -1,9 +1,0 @@
-# list all objects in the cluster
-$ kubectl get all
-
-# Generate yaml file from running resource
-$ kubectl get rs/replica-set1 -o yaml
-
-
-
-

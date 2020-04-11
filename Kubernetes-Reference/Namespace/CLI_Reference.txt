@@ -1,0 +1,12 @@
+# Create new namespace
+$ kubectl create namespace dev
+
+# list all pods in dev namespace
+$ kubectl get pods --namespace=dev
+
+# list all pods in default namespace
+$ kubectl get pods
+
+# list all pods in test namespace
+$ kubectl get pods --namespace=test
+
