@@ -1,0 +1,10 @@
+What is the deployment features?
+1- Roll out : updating the pods one after another not all of them in the same time so we don't lose the access
+the service.
+2- Rollback: if there is an issue in the last update then we need to rollback to the previous version.
+3- Pause: is pause the deployment pods if we need to make more than one change.
+4- Resume : resume the pods to run again after pause it for changes.
+
+Deployment Stratigies:
+1- Recreate Strategy: Drop down all pods and recreate it.
+2- Rolling Update: Drop one by one the old pods and start one by one the new ones.

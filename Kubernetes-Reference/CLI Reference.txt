@@ -1,0 +1,16 @@
+# list all objects in the cluster
+$ kubectl get all
+
+# Generate yaml file from running resource
+$ kubectl get rs/replica-set1 -o yaml
+
+# print current context
+$ kubectl config current-context
+
+# Change the default namespace from default to dev
+$ kubectl config set-context $(kubectl config current-context) --namspace=dev
+
+
+
+
+
