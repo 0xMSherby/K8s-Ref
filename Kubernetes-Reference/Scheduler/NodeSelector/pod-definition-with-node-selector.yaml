@@ -1,0 +1,14 @@
+pod-def.yml:
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+    labels:
+      app: myapp
+      type: front-end
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+  nodeSelector: # this section specify the label for node will host this pod
+    size: large

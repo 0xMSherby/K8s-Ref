@@ -7,20 +7,4 @@ $ kubectl taint node node01 color=blue:NoSchedule
 
 when we want to add a pod to the node with taint color=blue:NoSchedule
 
-pod-def.yml:
-apiVersion: v1
-kind: Pod
-metadata:
-  name: myapp-pod
-    labels:
-      app: myapp
-      type: front-end
-spec:
-  containers:
-    - name: nginx-container
-      image: nginx
-  toleration:
-   - key: "color"
-     value: "blue"
-     operator: "Equal"
-     effect: "NoSchedule"
+impelementation in pod-def-with-toleration.yml
