@@ -1,0 +1,21 @@
+# Author : Mohamed Sherby(Shipmast3r)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: myapp-pod
+  labels:
+    type: fronend
+spec:
+  containers:
+    - name: nginx
+      image: nginx
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+            - key: size
+              operator: Equal
+              values:
+                - small
+                - medium
