@@ -1,3 +1,10 @@
+After you restart the server you need to do this things to get the server up and running again:-
+==================
+sudo swapoff -a
+sudo sed -i '/ swap / s/^\(.*\)$/#\1/g' /etc/fstab
+systemctl restart kubelet
+systemctl enable kubelet
+====================================================================================================================
 Shortnames for resources
 $kubectl describe
 You must specify the type of resource to describe. Valid resource types include:    * all
